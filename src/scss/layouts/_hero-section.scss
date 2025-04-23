@@ -1,13 +1,19 @@
 .hero-section {
   padding-top: 124px;
-  background-color: var(--secondary-bg);
 
   &__container {
     display: flex;
     position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+    }
   }
 
   &__text-container {
+    position: relative;
+    z-index: 10;
+    padding-top: 168px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,11 +27,14 @@
 
   &__title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 25px;
     line-height: 136%;
-    color: var(--color-text-secondary);
 
     @media screen and (min-width: $bp-tablet) {
+      font-size: 45px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       font-size: 55px;
     }
   }
@@ -34,7 +43,6 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 160%;
-    color: var(--color-text);
   }
 
   &__button {
@@ -42,7 +50,7 @@
   }
 
   &__img-container {
-    display: none;
+    width: 100%;
 
     @media screen and (min-width: $bp-tablet) {
       position: relative;
@@ -57,32 +65,21 @@
     background-size: cover;
     background-position: top center;
     position: absolute;
-    bottom: 0;
 
     @media screen and (min-width: $bp-tablet) {
-      background-image: url('../../public/images/header-pic-small.png');
-      width: 100%;
-      height: 80%;
+      background-image: url("../../public/images/hero-img-small.png");
+      width: 314px;
+      height: 314px;
       right: 0;
+      bottom: 0;
     }
 
     @media screen and (min-width: $bp-desktop) {
-      background-image: url('../../public/images/header-pic.png');
+      top: 0;
+      background-image: url("../../public/images/hero-img.png");
       right: 10%;
-      width: 80%;
-      height: 100%;
+      width: 627px;
+      height: 627px;
     }
-  }
-
-  &__decorate {
-    width: 357px;
-    height: 358px;
-    background-image: url('../../public/images/decorate-hero.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }

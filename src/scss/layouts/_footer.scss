@@ -1,5 +1,4 @@
 .footer {
-  background-image: url('../../public/images/footer.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -15,7 +14,6 @@
     background-repeat: no-repeat;
     content: '';
     right: 0;
-    background-image: url('../../public/images/footer-decor.png');
   }
 
   &__container {

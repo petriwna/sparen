@@ -4,13 +4,11 @@
   display: flex;
   font-weight: 800;
   font-size: 30px;
-  color: var(--color-secondary);
+  color: var(--color-black);
+  text-wrap: nowrap;
 
   &:hover {
-    color: var(--color-secondary);
+    color: var(--color-black);
   }
 
-  &__icon {
-    fill: var(--color-secondary);
-  }
 }

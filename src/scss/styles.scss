@@ -1,3 +1,4 @@
+@import 'utils/fonts';
 @import 'utils/variables';
 @import 'utils/utils';
 
@@ -7,25 +8,17 @@
 @import "components/input";
 @import "components/link";
 @import "components/logo";
-@import "components/package";
 @import "components/pagination";
 @import "components/policy";
-@import "components/thank-you";
-@import "components/timer";
 
-@import "layouts/background-container";
 @import "layouts/container";
-@import "layouts/course-details-section";
-@import "layouts/details";
 @import "layouts/faq-section";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/hero-section";
 @import "layouts/mobile-menu";
-@import "layouts/pricing-section";
 @import "layouts/questions-container";
 @import "layouts/reserve-section";
-@import "layouts/second-bg-container";
 @import "layouts/section";
 @import "layouts/testimonial";
 @import "layouts/testimonials-section";

@@ -1,5 +1,3 @@
-import {Timer} from "./Timer";
-
 export class Main {
     constructor() {
         this.btnReserve = document.querySelector(".anchor");
@@ -8,11 +6,9 @@ export class Main {
         this.mobileMenu = document.querySelector('.mobile-menu');
         this.menuBtnOpen = document.querySelector('.menu-btn-open');
         this.menuBtnClose = document.querySelector('.menu-btn-close');
-        this.form = document.querySelector('#reserve-form');
 
         this.addEventListeners();
         this.initSwiper();
-        new Timer();
     }
 
     addEventListeners() {
@@ -20,8 +16,6 @@ export class Main {
 
         this.menuBtnOpen.addEventListener('click', this.handleMenuButton.bind(this));
         this.menuBtnClose.addEventListener('click', this.handleMenuButton.bind(this));
-
-        this.form.addEventListener('submit', this.handleFormSubmit.bind(this));
     }
 
     scrollToSection(event) {
