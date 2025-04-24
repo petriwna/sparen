@@ -1,0 +1,13 @@
+.terms {
+  font-size: 18px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+  }
+}
