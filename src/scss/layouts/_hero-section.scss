@@ -17,8 +17,15 @@
     padding-bottom: 124px;
 
     @media screen and (min-width: $bp-tablet) {
+      padding-top: 110px;
+      width: 50%;
+      padding-bottom: 114px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       padding-top: 168px;
       width: 50%;
+      padding-bottom: 124px;
     }
   }
 
@@ -63,9 +70,14 @@
     display: none;
 
     @media screen and (min-width: $bp-tablet) {
-      position: relative;
-      display: block;
+      display: flex;
+      align-items: center;
       width: 50%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      width: 60%;
     }
   }
 
@@ -74,23 +86,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    position: absolute;
 
 
     @media screen and (min-width: $bp-tablet) {
-      //background-image: url("../../public/images/hero-img-small.png");
-      //width: 314px;
-      //height: 314px;
+      background-image: url("../../public/images/hero-img-small.png");
+      width: 414px;
+      height: 414px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       background-image: url("../../public/images/hero-img.png");
-      right: 0;
-      top: 0;
       width: 627px;
       height: 627px;
     }
-    //
-    //@media screen and (min-width: $bp-desktop) {
-    //  width: 627px;
-    //  height: 627px;
-    //}
   }
 }
