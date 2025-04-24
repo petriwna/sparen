@@ -204,8 +204,8 @@ module.exports = {
             inject: 'body',
         }),
         new HtmlWebpackPlugin({
-            template: './src/privacy.html',
-            filename: 'privacy.html',
+            template: './src/datenschutz.html',
+            filename: 'datenschutz.html',
             minify: {
                 collapseWhitespace: true,
                 removeComments: false,

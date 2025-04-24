@@ -1,20 +1,7 @@
 .footer {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
   padding: 32px 0;
-  position: relative;
-
-  &::before {
-    z-index: 0;
-    width: 700px;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-    background-repeat: no-repeat;
-    content: '';
-    right: 0;
-  }
+  background-color: var(--dark-blue);
+  color: var(--color-white);
 
   &__container {
     position: relative;
@@ -37,6 +24,10 @@
     }
   }
 
+  &__link {
+    color: var(--color-white);
+  }
+
   &__nav,
   &__address {
     display: flex;
@@ -54,6 +45,7 @@
   &__logo,
   &__menu {
     flex-grow: 1;
+    color: var(--color-white);
   }
 
   &__menu {
@@ -72,37 +64,39 @@
   }
 
   &__address-link {
-    color: var(--color-secondary);
+    color: var(--color-white);
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
   }
 
   &__address-link:hover {
-    color: var(--text-color-primary);
+    color: var(--color-secondary);
   }
 
-  &__socials {
+  &__info {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 16px;
+    flex-direction: column;
+    padding: 20px 0;
 
-    @media screen and (min-width: $bp-tablet) {
-      justify-content: flex-start;
+    &:before {
+      content: '';
+      border: 1px solid #5F5F5F;
+      width: 100%;
     }
   }
 
-  &__socials-icon {
-    fill: var(--color-primary-light);
+  &__info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
   }
 
-  &__socials-icon:hover {
-    fill: var(--color-brand-normal);
-  }
-
-  &__address-copyright {
-    color: var(--color-secondary-dark);
-    font-size: 14px;
+  &__links {
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
   }
 }

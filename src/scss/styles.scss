@@ -5,6 +5,7 @@
 @import './base';
 
 @import "components/buttons";
+@import "components/calculator-form";
 @import "components/input";
 @import "components/link";
 @import "components/logo";
@@ -12,6 +13,8 @@
 @import "components/policy";
 @import "components/tipps-card";
 
+@import "layouts/calculator-section";
+@import "layouts/contact-section";
 @import "layouts/container";
 @import "layouts/footer";
 @import "layouts/header";
@@ -19,4 +22,5 @@
 @import "layouts/intro-section";
 @import "layouts/mobile-menu";
 @import "layouts/section";
+@import "layouts/testimonials-section";
 @import "layouts/tipps-section";
