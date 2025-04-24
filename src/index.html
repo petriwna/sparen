@@ -371,31 +371,25 @@
             Haben Sie Fragen oder benötigen Sie Hilfe? Schreiben Sie uns einfach.
         </p>
 
-        <div class="contact-wrapper">
-            <form class="contact-form" id="contactForm">
-                <div class="contact-form__group">
+        <div class="contact-section__wrapper">
+            <form class="contact-section__contact-form" id="contactForm">
+                <div class="input">
                     <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required/>
+                    <input class="input__control" type="text" id="name" name="name" required/>
                 </div>
 
-                <div class="contact-form__group">
+                <div class="input">
                     <label for="email">E-Mail *</label>
-                    <input type="email" id="email" name="email" required/>
+                    <input class="input__control" type="email" id="email" name="email" required/>
                 </div>
 
-                <div class="contact-form__group">
+                <div class="input">
                     <label for="message">Nachricht *</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea class="input__control" id="message" name="message" rows="4" required></textarea>
                 </div>
 
-                <button type="submit" class="button contact-form__button">Absenden</button>
+                <button type="submit" class="button contact-section__button">Absenden</button>
             </form>
-
-            <div class="contact-info">
-                <p><strong>E-Mail:</strong> info@sparen-in-de.de</p>
-                <p><strong>Telefon:</strong> +49 30 12345678</p>
-                <p><strong>Adresse:</strong> Musterstraße 1, 10115 Berlin</p>
-            </div>
         </div>
     </div>
 </section>

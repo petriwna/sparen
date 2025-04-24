@@ -5,57 +5,33 @@
   &__title {
     margin-bottom: 0.5rem;
   }
-}
 
-.contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: left;
+  &__wrapper {
+    width: 100%;
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+      margin: 0 auto;
+    }
   }
-}
 
-.contact-form {
-  &__group {
-    margin-bottom: 1rem;
+  &__contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 
     label {
       display: block;
       margin-bottom: 0.25rem;
+      margin-left: 5px;
       font-weight: 500;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
+      text-align: left;
     }
   }
 
   &__button {
-    margin-top: 1rem;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    background-color: var(--color-black);
-    color: #fff;
-    border: none;
-    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
-.contact-info {
-  font-size: 1rem;
-  line-height: 1.6;
-
-  p {
-    margin-bottom: 1rem;
-  }
-}
