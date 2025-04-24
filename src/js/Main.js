@@ -1,30 +1,25 @@
 export class Main {
     constructor() {
-        this.btnReserve = document.querySelector(".anchor");
-        this.reservSection = document.querySelector('#reserve');
-
         this.mobileMenu = document.querySelector('.mobile-menu');
         this.menuBtnOpen = document.querySelector('.menu-btn-open');
         this.menuBtnClose = document.querySelector('.menu-btn-close');
 
+        this.goal = parseFloat(document.querySelector("#goalAmount").value);
+        this.months = parseInt(document.querySelector("#months").value);
+        this.resultDiv = document.querySelector("#result");
+
+        this.form = document.querySelector("#saving-form");
+
         this.addEventListeners();
-        this.initSwiper();
     }
 
     addEventListeners() {
-        // this.btnReserve.addEventListener('click', this.scrollToSection.bind(this));
-
         this.menuBtnOpen.addEventListener('click', this.handleMenuButton.bind(this));
         this.menuBtnClose.addEventListener('click', this.handleMenuButton.bind(this));
+
+        this.form.addEventListener("submit", this.handleFormSubmit.bind(this));
     }
 
-    scrollToSection(event) {
-        event.preventDefault();
-        this.reservSection.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        });
-    }
 
     handleMenuButton() {
         this.toggleMenu();
@@ -39,30 +34,16 @@ export class Main {
         document.body.classList.toggle('is-scroll-disable');
     }
 
-    initSwiper() {
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                },
-                1280: {
-                    slidesPerView: 3,
-                },
-            },
-            pagination: {
-                el: '.pagination',
-                bulletClass: 'pagination__button',
-                bulletActiveClass: 'pagination__button--active',
-            },
-        });
-    }
-
     handleFormSubmit(event) {
         event.preventDefault();
 
-        window.location.href = 'thank-you.html';
+        if (this.goal > 0 && this.months > 0) {
+            const monthlySaving = (this.goal / this.months).toFixed(2);
+            this.resultDiv.textContent = `Sie müssen monatlich ${monthlySaving}€ sparen, um Ihr Ziel in ${months} Monaten zu erreichen.`;
+            this.resultDiv.classList.remove("hidden");
+        } else {
+            this.resultDiv.textContent = "Bitte geben Sie gültige Werte ein.";
+            this.resultDiv.classList.remove("hidden");
+        }
     }
 }
