@@ -6,4 +6,9 @@
   gap: 20px;
   align-items: center;
   border-radius: 30px;
+
+  &__icon {
+    width: 50%;
+    height: 50%;
+  }
 }

@@ -1,0 +1,28 @@
+.lifehack-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__top {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__image {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+  }
+}

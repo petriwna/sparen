@@ -48,14 +48,17 @@
     <div class="container">
         <div class="header__container">
             <nav class="header__nav">
-                <a class="header__logo logo link" href="/">
-                    💶 Sparen DE
-                </a>
+                <div class="header__logo logo">
+                    <img class="logo__img" src="public/images/euro.png" alt="Logo">
+                    <a class="link" href="/">
+                        Sparen DE
+                    </a>
+                </div>
                 <ul class="header__menu">
                     <li><a class="link" href="#intro">Intro</a></li>
                     <li><a class="link" href="#tipps">Tipps</a></li>
                     <li><a class="link" href="#hacks">Finanz-Hacks</a></li>
-                    <li><a class="link" href="#rechner">Rechner</a></li>
+                    <li><a class="link" href="#calculator">Sparrechner</a></li>
                     <li><a class="link" href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
@@ -181,7 +184,7 @@
 
         <div class="tipps-section__container">
             <article class="tipps-section__tipps-card--first tipps-card">
-                <img src="img/icons/rent.svg" alt="Miete" class="tipps-card__icon"/>
+                <img src="public/images/miete.png" alt="Miete" class="tipps-card__icon"/>
                 <h3 class="tipps-card__title">Miete</h3>
                 <p class="tipps-card__text">
                     Nutzen Sie Wohnungsportale mit Filter für günstige Objekte. Teilen Sie sich die Miete in einer WG
@@ -190,7 +193,7 @@
             </article>
 
             <article class="tipps-section__tipps-card--second tipps-card">
-                <img src="img/icons/groceries.svg" alt="Lebensmittel" class="tipps-card__icon"/>
+                <img src="public/images/groceries.png" alt="Lebensmittel" class="tipps-card__icon"/>
                 <h3 class="tipps-card__title">Lebensmittel</h3>
                 <p class="tipps-card__text">
                     Planen Sie Wocheneinkäufe, kaufen Sie saisonal & regional. Vermeiden Sie spontane Supermarktbesuche
@@ -199,7 +202,7 @@
             </article>
 
             <article class="tipps-section__tipps-card--third tipps-card">
-                <img src="img/icons/insurance.svg" alt="Versicherung" class="tipps-card__icon"/>
+                <img src="public/images/insurance.png" alt="Versicherung" class="tipps-card__icon"/>
                 <h3 class="tipps-card__title">Versicherungen</h3>
                 <p class="tipps-card__text">
                     Vergleichen Sie regelmäßig Anbieter. Viele zahlen für unnötige oder doppelte Versicherungen.
@@ -208,7 +211,7 @@
             </article>
 
             <article class="tipps-section__tipps-card--fourth tipps-card">
-                <img src="img/icons/mobile.svg" alt="Mobilfunk" class="tipps-card__icon"/>
+                <img src="public/images/mobile.png" alt="Mobilfunk" class="tipps-card__icon"/>
                 <h3 class="tipps-card__title">Mobilfunk</h3>
                 <p class="tipps-card__text">
                     Wechseln Sie regelmäßig Tarife. Prepaid-Angebote sind oft günstiger als Verträge. EU-Roaming
@@ -217,7 +220,7 @@
             </article>
 
             <article class="tipps-section__tipps-card--fifth tipps-card">
-                <img src="img/icons/bank.svg" alt="Banken" class="tipps-card__icon"/>
+                <img src="public/images/banks.png" alt="Banken" class="tipps-card__icon"/>
                 <h3 class="tipps-card__title">Banken</h3>
                 <p class="tipps-card__text">
                     Setzen Sie auf kostenlose Girokonten ohne Kontoführungsgebühren. Online-Banken bieten oft bessere
@@ -226,7 +229,7 @@
             </article>
 
             <article class="tipps-section__tipps-card--sixth tipps-card">
-                <img src="img/icons/energy.svg" alt="Energie sparen" class="tipps-card__icon"/>
+                <img src="public/images/energy.png" alt="Energie sparen" class="tipps-card__icon"/>
                 <h3 class="tipps-card__title">Energie</h3>
                 <p class="tipps-card__text">
                     Senken Sie Ihre Strom- und Heizkosten durch LED-Lampen, smarte Thermostate und Anbieterwechsel. Der
@@ -242,52 +245,82 @@
         <p class="section__subtitle">Kleine Tricks mit großer Wirkung für Ihren Geldbeutel.</p>
 
         <div class="lifehacks-section__list">
-            <div class="lifehack-item">
-                <h3 class="lifehack-item__title">📊 50-30-20-Regel</h3>
+            <article class="lifehack-item">
+                <div class="lifehack-item__top">
+                    <div class="lifehack-item__image">
+                        <img src="public/images/growth.png" alt="Smartphone" class="lifehack-item__image--img"/>
+                    </div>
+                    <h3 class="lifehack-item__title">50-30-20-Regel</h3>
+                </div>
                 <p class="lifehack-item__text">
                     Strukturieren Sie Ihr Einkommen: 50 % für Notwendiges, 30 % für Wünsche, 20 % zum Sparen oder
                     Schuldenabbau.
                 </p>
-            </div>
+            </article>
 
-            <div class="lifehack-item">
-                <h3 class="lifehack-item__title">🔄 Automatisches Sparen</h3>
+            <article class="lifehack-item">
+                <div class="lifehack-item__top">
+                    <div class="lifehack-item__image">
+                        <img src="public/images/authomatic.png" alt="Smartphone" class="lifehack-item__image--img"/>
+                    </div>
+                    <h3 class="lifehack-item__title">Automatisches Sparen</h3>
+                </div>
                 <p class="lifehack-item__text">
                     Richten Sie einen Dauerauftrag ein, der monatlich Geld auf Ihr Sparkonto überweist – am besten
                     direkt nach Gehaltseingang.
                 </p>
-            </div>
+            </article>
 
-            <div class="lifehack-item">
-                <h3 class="lifehack-item__title">💳 Nur mit Karte zahlen</h3>
+            <article class="lifehack-item">
+                <div class="lifehack-item__top">
+                    <div class="lifehack-item__image">
+                        <img src="public/images/card.png" alt="Smartphone" class="lifehack-item__image--img"/>
+                    </div>
+                    <h3 class="lifehack-item__title">Nur mit Karte zahlen</h3>
+                </div>
                 <p class="lifehack-item__text">
                     So behalten Sie Ihre Ausgaben im Blick – per App oder Kontoübersicht. Barzahlungen machen es
                     schwerer, den Überblick zu behalten.
                 </p>
-            </div>
+            </article>
 
-            <div class="lifehack-item">
-                <h3 class="lifehack-item__title">🛍️ Einkaufslisten nutzen</h3>
+            <article class="lifehack-item">
+                <div class="lifehack-item__top">
+                    <div class="lifehack-item__image">
+                        <img src="public/images/shop.png" alt="Smartphone" class="lifehack-item__image--img"/>
+                    </div>
+                    <h3 class="lifehack-item__title">Einkaufslisten nutzen</h3>
+                </div>
                 <p class="lifehack-item__text">
                     Ob online oder im Supermarkt: Mit einer Liste kaufen Sie gezielter und vermeiden Impulskäufe.
                 </p>
-            </div>
+            </article>
 
-            <div class="lifehack-item">
-                <h3 class="lifehack-item__title">📱 Cashback & Rabatt-Apps</h3>
+            <article class="lifehack-item">
+                <div class="lifehack-item__top">
+                    <div class="lifehack-item__image">
+                        <img src="public/images/smartphone.png" alt="Smartphone" class="lifehack-item__image--img"/>
+                    </div>
+                    <h3 class="lifehack-item__title">Cashback & Rabatt-Apps</h3>
+                </div>
                 <p class="lifehack-item__text">
                     Nutzen Sie Apps wie Payback, Shoop oder DeutschlandCard. So holen Sie sich Geld bei alltäglichen
                     Käufen zurück.
                 </p>
-            </div>
+            </article>
 
-            <div class="lifehack-item">
-                <h3 class="lifehack-item__title">📅 Verträge regelmäßig prüfen</h3>
+            <article class="lifehack-item">
+                <div class="lifehack-item__top">
+                    <div class="lifehack-item__image">
+                        <img src="public/images/calendar.png" alt="Smartphone" class="lifehack-item__image--img"/>
+                    </div>
+                    <h3 class="lifehack-item__title">Verträge regelmäßig prüfen</h3>
+                </div>
                 <p class="lifehack-item__text">
                     Kündigen Sie rechtzeitig unnötige Abos oder wechseln Sie Anbieter – z. B. für Strom, Handy oder
                     Versicherung.
                 </p>
-            </div>
+            </article>
         </div>
     </div>
 </section>
@@ -398,14 +431,17 @@
     <div class="container">
         <div class="footer__container">
             <nav class="footer__nav">
-                <a class="footer__logo logo link" href="/">
-                    💶 Sparen DE
-                </a>
+                <div class="footer__logo logo">
+                    <img class="logo__img" src="public/images/euro.png" alt="Logo">
+                    <a class="footer__link link" href="/">
+                        Sparen DE
+                    </a>
+                </div>
                 <ul class="footer__menu">
                     <li><a class="footer__link link" href="#intro">Intro</a></li>
                     <li><a class="footer__link link" href="#tipps">Tipps</a></li>
                     <li><a class="footer__link link" href="#hacks">Finanz-Hacks</a></li>
-                    <li><a class="footer__link link" href="#rechner">Rechner</a></li>
+                    <li><a class="footer__link link" href="#calculator">Sparrechner</a></li>
                     <li><a class="footer__link link" href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
@@ -427,14 +463,14 @@
         </div>
         <div class="footer__info">
             <div class="footer__info-container">
-            <p class="footer__address-copyright">© 2025 Sparen DE Inc.</p>
+                <p class="footer__address-copyright">© 2025 Sparen DE Inc.</p>
 
-            <div class="footer__links">
-                <a class="footer__address-link" href="datenschutz.html">Datenschutz</a>
-                <a class="footer__address-link" href="cookies.html">Cookies</a>
-                <a class="footer__address-link" href="terms.html"
-                >AGB</a>
-            </div>
+                <div class="footer__links">
+                    <a class="footer__address-link" href="datenschutz.html">Datenschutz</a>
+                    <a class="footer__address-link" href="cookies.html">Cookies</a>
+                    <a class="footer__address-link" href="terms.html"
+                    >AGB</a>
+                </div>
             </div>
         </div>
     </div>
