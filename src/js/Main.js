@@ -12,7 +12,7 @@ export class Main {
     }
 
     addEventListeners() {
-        this.btnReserve.addEventListener('click', this.scrollToSection.bind(this));
+        // this.btnReserve.addEventListener('click', this.scrollToSection.bind(this));
 
         this.menuBtnOpen.addEventListener('click', this.handleMenuButton.bind(this));
         this.menuBtnClose.addEventListener('click', this.handleMenuButton.bind(this));
