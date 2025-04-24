@@ -11,6 +11,7 @@
 
   &__container {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
@@ -21,6 +22,10 @@
     @media screen and (min-width: $bp-tablet) {
       width: 50%;
       padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 60%;
     }
   }
 
@@ -38,7 +43,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: bottom center;
-
       display: block;
       width: 382px;
       height: 382px;
@@ -56,7 +60,8 @@
     gap: 6px;
   }
 
-  &__icon {
-
+  &__image {
+    width: 24px;
+    height: 24px;
   }
 }
