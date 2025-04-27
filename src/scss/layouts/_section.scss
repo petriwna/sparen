@@ -1,5 +1,6 @@
 .section {
   padding: 20px 0;
+  font-family: var(--third-family);
 
   @media screen and (min-width: $bp-tablet) {
     padding: 48px 0;
@@ -7,9 +8,10 @@
 
   &__title {
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1.5;
-    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    color: var(--primary-green);
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 64px;
@@ -21,10 +23,10 @@
     }
   }
 
-  &__subtitle {
-    color: #666;
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    text-align: center;
+  &__line {
+    width: 226px;
+    background-image: linear-gradient(90deg, transparent, #5F5F5F, transparent);
+    border: 0;
+    height: 2px;
   }
 }
