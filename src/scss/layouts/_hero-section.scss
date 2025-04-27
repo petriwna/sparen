@@ -7,21 +7,11 @@
   }
 
   &__container {
+    padding-top: 40px;
     display: flex;
-    position: relative;
-  }
-
-  &__text-container {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 50%;
-    }
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
   }
 
   &__title {
@@ -30,6 +20,7 @@
     font-size: 50px;
     text-transform: uppercase;
     color: var(--primary-green);
+    margin-bottom: 42px;
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 45px;
@@ -45,6 +36,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 137%;
+    margin-bottom: 22px;
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 20px;
@@ -64,33 +56,12 @@
     }
   }
 
-  &__img-container {
+  &__img {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-tablet){
       width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-    }
-  }
-
-  &__image {
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-
-
-    @media screen and (min-width: $bp-tablet) {
-      background-image: url("../../public/images/hero.png");
-      width: 377px;
-      height: 347px;
-    }
-
-    @media screen and (min-width: $bp-desktop) {
-      width: 497px;
-      height: 457px;
+      display: block;
     }
   }
 }
