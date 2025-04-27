@@ -18,6 +18,12 @@
     gap: 40px;
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   &__title {
     margin-bottom: 42px;
   }
