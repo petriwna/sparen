@@ -4,11 +4,14 @@
   display: flex;
   font-weight: 800;
   font-size: 30px;
-  color: var(--color-black);
   text-wrap: nowrap;
 
-  &:hover {
-    color: var(--color-black);
+  &__link {
+    color: var(--primary-green);
+
+    &:hover {
+      color: var(--primary-green);
+    }
   }
 
   &__img {

@@ -3,11 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 16px;
-
-  @media screen and (min-width: $bp-desktop) {
-    padding-top: 32px;
-  }
+  padding: 10px 16px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  background: var(--white);
+  font-size: 14px;
+  z-index: 2;
 
   &__container {
     display: flex;
@@ -42,7 +42,7 @@
     height: 24px;
     width: 24px;
     padding: 0;
-    fill: var(--color-black);
+    fill: var(--primary-green);
 
     @media screen and (min-width: $bp-tablet) {
       display: none;

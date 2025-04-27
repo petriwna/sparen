@@ -1,5 +1,18 @@
 .hero-section {
-  padding-top: 124px;
+  padding: 124px;
+  position: relative;
+
+  &__decor {
+    background-image: url("../../public/images/hero-decor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 348px;
+    height: 348px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 1;
+  }
 
   &__container {
     display: flex;
@@ -14,25 +27,18 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
-    padding-bottom: 124px;
 
     @media screen and (min-width: $bp-tablet) {
-      padding-top: 110px;
-      width: 50%;
-      padding-bottom: 114px;
-    }
-
-    @media screen and (min-width: $bp-desktop) {
-      padding-top: 168px;
-      width: 50%;
-      padding-bottom: 124px;
+      width: 60%;
     }
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 136%;
+    font-family: var(--third-family);
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--primary-green);
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 45px;
@@ -44,9 +50,11 @@
   }
 
   &__text {
+    font-family: var(--font-family);
     font-weight: 400;
-    font-size: 24px;
-    line-height: 160%;
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--text-2);
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 20px;
@@ -72,12 +80,12 @@
     @media screen and (min-width: $bp-tablet) {
       display: flex;
       align-items: center;
-      width: 50%;
+      width: 40%;
     }
 
     @media screen and (min-width: $bp-desktop) {
       display: block;
-      width: 60%;
+      //width: 60%;
     }
   }
 
@@ -89,13 +97,13 @@
 
 
     @media screen and (min-width: $bp-tablet) {
-      background-image: url("../../public/images/hero-img-small.png");
+      //background-image: url("../../public/images/hero-img-small.png");
       width: 414px;
       height: 414px;
     }
 
     @media screen and (min-width: $bp-desktop) {
-      background-image: url("../../public/images/hero-img.png");
+      //background-image: url("../../public/images/hero-img.png");
       width: 627px;
       height: 627px;
     }
