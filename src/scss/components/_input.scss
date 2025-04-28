@@ -13,22 +13,22 @@
     font-size: 16px;
     line-height: 1.17;
     border-radius: 8px;
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--primary-green);
     background-color: transparent;
 
     &:focus {
-      border-color: var(--secondary-bg);
+      border-color: var(--primary-green);
       outline: none;
     }
 
     &::placeholder {
-      color: var(--color-text);
+      color: var(--text-1);
       font-size: 16px;
       line-height: 1.17;
     }
 
     &:focus::placeholder {
-      color: var(--text-color-primary);
+      color: var(--text-2);
     }
 
     @media screen and (min-width: $bp-tablet) {

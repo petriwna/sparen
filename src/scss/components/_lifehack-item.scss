@@ -1,8 +1,21 @@
 .lifehack-item {
-  background: #fff;
+  background: #ffffff;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+
+  &__badge {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: var(--secondary);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
 
   &__title {
     font-size: 1.1rem;
