@@ -3,8 +3,12 @@
   align-items: center;
   display: flex;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 24px;
   text-wrap: nowrap;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 30px;
+  }
 
   &__link {
     color: var(--primary-green);
