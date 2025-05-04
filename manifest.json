@@ -1,5 +1,4 @@
 {
-  "main.css": "auto/main.css",
   "main.js": "auto/scripts.js",
   "public/images/hero.png": "auto/public/images/hero.png",
   "public/images/trips-section.png": "auto/public/images/trips-section.png",
@@ -23,12 +22,12 @@
   "public/images/icons.svg": "auto/public/images/icons.svg",
   "favicon/web-app-manifest-192x192.png": "auto/favicon/web-app-manifest-192x192.png",
   "datenschutz.html": "auto/datenschutz.html",
-  "favicon/favicon-96x96.png": "auto/favicon/favicon-96x96.png",
   "cookies.html": "auto/cookies.html",
   "terms.html": "auto/terms.html",
+  "favicon/favicon-96x96.png": "auto/favicon/favicon-96x96.png",
   "sitemap.xml": "auto/sitemap.xml",
   "favicon/site.webmanifest": "auto/favicon/site.webmanifest",
   "robots.txt": "auto/robots.txt",
-  "main.css.map": "auto/main.css.map",
-  "scripts.js.map": "auto/scripts.js.map"
+  "scripts.js.map": "auto/scripts.js.map",
+  "main.hot-update.js.map": "auto/main.05e23ce0926f3c30be9f.hot-update.js.map"
 }
